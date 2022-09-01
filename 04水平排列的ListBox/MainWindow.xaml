@@ -1,0 +1,21 @@
+﻿<Window x:Class="_04水平排列的ListBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ItemsControl的PanelTemplate" Height="131" Width="204">
+    <Grid Margin="6">
+        <ListBox>
+            <!--ItemsPanel-->
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <!--条目-->
+            <TextBlock>Allan</TextBlock>
+            <TextBlock>Kevin</TextBlock>
+            <TextBlock>Drew</TextBlock>
+            <TextBlock>Timothy</TextBlock>
+        </ListBox>
+    </Grid>
+</Window>

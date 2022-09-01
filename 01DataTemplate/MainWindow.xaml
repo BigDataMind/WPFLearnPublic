@@ -1,0 +1,10 @@
+﻿<Window x:Class="_01DataTemplate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local ="clr-namespace:_01DataTemplate"
+        Title="事件驱动模式" Height="350" Width="623">
+    <StackPanel Orientation="Horizontal">
+        <local:CarDetailView x:Name="detailView"/>
+        <ListBox Name="listBoxCars" Width="180" Margin="5,0" SelectionChanged="listBoxCars_SelectionChanged"/>
+    </StackPanel>
+</Window>
